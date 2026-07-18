@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>호정's company</title>
+<style>
+  :root {
+    --bg: #fafaf9;
+    --surface: #ffffff;
+    --text: #1f2124;
+    --muted: #6b7280;
+    --accent: #4f46e5;
+    --accent-soft: #eef0ff;
+    --border: #e5e7eb;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Pretendard", "Noto Sans KR", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  header {
+    padding: 3.5rem 1.5rem 2rem;
+    text-align: center;
+    background: linear-gradient(180deg, #eef0ff 0%, var(--bg) 100%);
+  }
+
+  header h1 {
+    font-size: 2.1rem;
+    letter-spacing: -0.02em;
+  }
+
+  header h1 span {
+    color: var(--accent);
+  }
+
+  header p {
+    color: var(--muted);
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  nav.cat-nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  nav.cat-nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.88rem;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  nav.cat-nav a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem 5rem;
+  }
+
+  section {
+    margin-top: 3rem;
+  }
+
+  section .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--border);
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  section h2::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  section .section-head .tag {
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+
+  .list {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .item {
+    display: flex;
+    gap: 0.9rem;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .item:last-child {
+    border-bottom: none;
+  }
+
+  .item:hover {
+    background: var(--accent-soft);
+  }
+
+  .item .num {
+    flex-shrink: 0;
+    width: 1.6rem;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding-top: 0.15rem;
+  }
+
+  .item .body h3 {
+    font-size: 0.98rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+
+  .item .body h3 a {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .item .body h3 a:hover {
+    color: var(--accent);
+  }
+
+  .item .body p {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding: 2rem 1.5rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>호정<span>'s</span> company</h1>
+  <p>국내 뉴스 브리핑 — 2026.07.17</p>
+  <nav class="cat-nav">
+    <a href="#politics">정치</a>
+    <a href="#economy">경제</a>
+    <a href="#society">사회</a>
+    <a href="#issues">시사</a>
+  </nav>
+</header>
+
+<main>
+  <section id="politics">
+    <div class="section-head">
+      <h2>정치</h2>
+      <span class="tag">POLITICS</span>
+    </div>
+    <div class="list">
+      <div class="item">
+        <span class="num">01</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717131801900" target="_blank" rel="noopener">北, 美주도 '림팩' 맹비난…"韓日·나토 결탁 불장난질"</a></h3>
+          <p>북한이 한미일·나토 군사협력을 겨냥해 강도 높은 비난 성명을 냈다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">02</span>
+        <div class="body">
+          <h3><a href="https://biz.heraldcorp.com/article/10811491" target="_blank" rel="noopener">국회, 제78주년 제헌절 경축식 개최…'AI구현' 제헌의원이 제헌헌법 낭독</a></h3>
+          <p>조정식 국회의장이 개헌 필요성을 강조했고 AI로 구현한 제헌의원들이 헌법을 낭독했다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">03</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717123507475" target="_blank" rel="noopener">"北, DMZ 인근 방사포 시설 다수 건설 정황…서울 50㎞ 거리"</a></h3>
+          <p>개성 남쪽에 방사포 정비·저장 시설로 추정되는 건물 21개가 새로 포착됐다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">04</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717122147348" target="_blank" rel="noopener">유시민 '李실패'에 TV조선 앵커 "도가 지나치다" MBC "계파갈등 부추겨"</a></h3>
+          <p>유시민 작가의 발언을 두고 방송사별 반응이 극명하게 갈렸다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">05</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717121241274" target="_blank" rel="noopener">이 대통령 "12월3일 기념일로"… 장동혁은 경축식 대신 '올공행'</a></h3>
+          <p>여야 지도부의 제헌절 대응이 엇갈리며 정치적 신경전이 이어졌다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">06</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717120710226" target="_blank" rel="noopener">조 의장 '10차 개헌' 제안에 국힘 반발...민주 최고위, 송영길·김용 출마 허용키로</a></h3>
+          <p>개헌 논의와 전당대회 출마 자격 문제가 동시에 정치권 쟁점으로 떠올랐다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">07</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717103527521" target="_blank" rel="noopener">민주당 '예외 인정' 후폭풍…친명계 "당 원칙 무너졌다" 공개 반발</a></h3>
+          <p>송영길·김용 출마 예외 허용 결정에 당내 반발 기류가 확산되고 있다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">08</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717102840399" target="_blank" rel="noopener">이재명 대통령 "개인정보 유출 기업 제재 강화" 쿠팡 겨냥?</a></h3>
+          <p>대통령이 개인정보 유출 기업에 대한 제재 강화 방침을 언급했다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">09</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717100151914" target="_blank" rel="noopener">'노무현의 민주당'과 '이재명의 민주당'의 예정된 충돌</a></h3>
+          <p>당내 노선을 둘러싼 계파 간 긴장 관계를 짚은 분석 기사다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">10</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717121728312" target="_blank" rel="noopener">民주, 송영길·김용 전대 출마 길 열자…"오욕의 역사" vs "檢 탄압 상처"</a></h3>
+          <p>출마 허용을 둘러싼 당내 찬반 논리가 정면으로 부딪혔다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="economy">
+    <div class="section-head">
+      <h2>경제</h2>
+      <span class="tag">ECONOMY</span>
+    </div>
+    <div class="list">
+      <div class="item">
+        <span class="num">01</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717133602076" target="_blank" rel="noopener">'이용자 빠른 확보' vs '카톡서 간편 사용'…방법 달라도 AI 올인하는 네카오</a></h3>
+          <p>네이버와 카카오가 서로 다른 전략으로 AI 서비스 경쟁에 뛰어들었다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">02</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717133530070" target="_blank" rel="noopener">'삼전닉스' 레버리지에 한 달 새 7조 원 유입</a></h3>
+          <p>삼성전자·SK하이닉스 레버리지 상품에 대규모 자금이 몰렸다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">03</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717133309044" target="_blank" rel="noopener">궤도 "문제는 AI가 풀고 인간은 검증·판단…경영 본질 집중해야"</a></h3>
+          <p>AI 시대 경영 전략에 대한 전문가 진단이 제시됐다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">04</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717133012012" target="_blank" rel="noopener">"AI 타고 몸값 40% 폭등"…데이터브릭스, 기업가치 260조원 눈앞</a></h3>
+          <p>미국 데이터 스타트업 데이터브릭스의 기업가치가 급등하고 있다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">05</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717132556979" target="_blank" rel="noopener">[ESG포커스] 우리금융, 내부탄소↓…금융배출량 '과제'</a></h3>
+          <p>우리금융지주의 탄소 감축 성과와 남은 과제를 짚었다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">06</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717132459971" target="_blank" rel="noopener">IBM 이사회는 왜 악재를 먼저 알렸나…CEO 책임론·분할론 확산</a></h3>
+          <p>IBM 실적 부진을 둘러싸고 경영진 책임론이 커지고 있다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">07</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717132326958" target="_blank" rel="noopener">HBM4, HBM4E… 삼전이 꺼내든 무기와 HBM 패권전쟁</a></h3>
+          <p>차세대 고대역폭 메모리를 둘러싼 삼성전자의 전략을 분석했다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">08</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717131910936" target="_blank" rel="noopener">신현송 "금리 인상 기조 이어갈 필요"...주담대 금리 8% 넘어가나</a></h3>
+          <p>국제결제은행 신현송 경제고문이 금리 정책 방향을 언급했다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">09</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717131728882" target="_blank" rel="noopener">세금으로 집값 잡겠다던 20년足…남은 건 '거래절벽'과 '학습효과'</a></h3>
+          <p>지난 20년간의 부동산 세제 정책 효과를 되짚어봤다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">10</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717130153707" target="_blank" rel="noopener">'닥공' 나선 정부…시장 요구 얼마나 담아낼까 [부동산 새판 짜기①]</a></h3>
+          <p>정부가 새로운 부동산 대책 마련에 속도를 내고 있다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="society">
+    <div class="section-head">
+      <h2>사회</h2>
+      <span class="tag">SOCIETY</span>
+    </div>
+    <div class="list">
+      <div class="item">
+        <span class="num">01</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717132611981" target="_blank" rel="noopener">"아시아 치킨의 왕은 대구"… 두류공원 달군 '2026 대구치맥페스티벌'</a></h3>
+          <p>대구 두류공원에서 열린 치맥 축제가 큰 인파를 모았다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">02</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717130133697" target="_blank" rel="noopener">"제주 등 공항 폭파" 협박범, 3000억원 손해배상 현실화 될까?</a></h3>
+          <p>공항 폭파 협박으로 인한 피해에 대한 손해배상 소송 가능성이 제기됐다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">03</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717125440644" target="_blank" rel="noopener">검찰이냐 경찰이냐… 보완수사권, 그 질문부터 잘못됐다</a></h3>
+          <p>수사권 조정 논쟁의 프레임 자체를 다시 짚어보는 칼럼이다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">04</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717121550301" target="_blank" rel="noopener">'K-태권도' 매력에 흠뻑…춘천 세계태권도문화축제 성황리 폐막</a></h3>
+          <p>춘천에서 열린 세계태권도문화축제가 성공적으로 마무리됐다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">05</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717120812233" target="_blank" rel="noopener">"돼지벼락에서 웃무실까지"…지명 속에 살아 숨 쉬는 문경의 옛 이야기</a></h3>
+          <p>경북 문경 지역 지명에 얽힌 유래를 소개하는 기사다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">06</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717120237166" target="_blank" rel="noopener">광주경찰청장, 장윤기 사건 일파만파에도 '휴가 미복귀'</a></h3>
+          <p>지역 경찰 수장의 대응을 둘러싸고 비판 여론이 커지고 있다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">07</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717115348036" target="_blank" rel="noopener">방통위, 유진 YTN 최대주주 직권취소?… 민영화 다시 수면 위</a></h3>
+          <p>YTN 최대주주 지위를 둘러싼 논란이 다시 불거졌다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">08</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717112131543" target="_blank" rel="noopener">'장윤기 증거 인멸'이 부른 '친족 특례' 논쟁</a></h3>
+          <p>증거인멸 사건을 계기로 친족 특례 조항 개정 논의가 확산되고 있다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">09</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717105531874" target="_blank" rel="noopener">18분 만에 수능 96점?…조선 '과거'부터 AI 안경까지 기상천외 '커닝' 변천사</a></h3>
+          <p>시대별 시험 부정행위 수법의 변천사를 다룬 기사다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">10</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717132439967" target="_blank" rel="noopener">인천 시민 '공항 통합' 강력 반발에…박찬대 "靑서 '논의 안 한다' 통보"</a></h3>
+          <p>공항 통합안을 둘러싸고 인천 지역 여론이 크게 반발했다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="issues">
+    <div class="section-head">
+      <h2>시사 <span style="font-size:0.75rem; color:var(--muted); font-weight:400;">(국제)</span></h2>
+      <span class="tag">WORLD AFFAIRS</span>
+    </div>
+    <div class="list">
+      <div class="item">
+        <span class="num">01</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717133752094" target="_blank" rel="noopener">AI 투자 회의론에 亞 기술주 급락…"펀더멘털 악화는 아냐"</a></h3>
+          <p>아시아 기술주가 AI 투자 고평가 우려로 조정을 받았다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">02</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717133652087" target="_blank" rel="noopener">트럼프, 또 음모론? "중국, 2020년 대선 광범위 개입"</a></h3>
+          <p>트럼프 전 대통령이 2020년 대선 관련 새로운 주장을 내놨다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">03</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717133550071" target="_blank" rel="noopener">트럼프 관세에 브라질 대선판 변수…오히려 좌파에 호재</a></h3>
+          <p>미국의 관세 정책이 브라질 대선 구도에 영향을 주고 있다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">04</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717130439743" target="_blank" rel="noopener">상하이서 '세계인공지능대회' 개막…中 AI·로봇 성과 한자리에</a></h3>
+          <p>중국 상하이에서 세계 최대 규모의 AI 박람회가 열렸다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">05</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717113153725" target="_blank" rel="noopener">'월드컵 결승' 뉴저지, 연기에 파묻혀…캐나다 산불로 남한 면적 24% 소실</a></h3>
+          <p>캐나다 대형 산불 연기가 미국 동부까지 퍼졌다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">06</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717115300032" target="_blank" rel="noopener">인도 최대 원전 설계도 해킹…기밀자료 1만9천개 유출</a></h3>
+          <p>인도 최대 원전의 설계 기밀이 해킹으로 대량 유출됐다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">07</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717052356619" target="_blank" rel="noopener">무력 충돌 엿새째…이란 남부·남서부 도시에 미군 공습</a></h3>
+          <p>미국과 이란 간 군사적 충돌이 엿새째 이어지고 있다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">08</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717130907803" target="_blank" rel="noopener">여성으로 성별 바꾼 독일 극우…결국 남성교도소로</a></h3>
+          <p>독일에서 성전환 수감자 처우를 둘러싼 논란이 일었다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">09</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717133439062" target="_blank" rel="noopener">"국가 안보가 뚫렸다"…트럼프, '기밀 해제' 카드로 美 선거 시스템 취약성 정조준</a></h3>
+          <p>트럼프 측이 선거 시스템 보안 취약성을 문제 삼고 나섰다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="num">10</span>
+        <div class="body">
+          <h3><a href="https://v.daum.net/v/20260717131238840" target="_blank" rel="noopener">중간선거 앞둔 트럼프, 강성지지층 겨냥 부정선거론 26분 연설</a></h3>
+          <p>미국 중간선거를 앞두고 부정선거 주장이 다시 제기됐다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 호정's company · 기사 원문은 각 링크에서 확인하세요
+</footer>
+
+</body>
+</html>
