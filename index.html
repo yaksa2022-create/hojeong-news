@@ -107,11 +107,39 @@
     color: var(--muted);
   }
 
+  h3.sub-head {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 1.6rem 0 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  h3.sub-head:first-of-type {
+    margin-top: 0;
+  }
+
+  h3.sub-head::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
   .list {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 14px;
     overflow: hidden;
+  }
+
+  .list.empty {
+    padding: 1rem 1.25rem;
+    color: var(--muted);
+    font-size: 0.85rem;
   }
 
   .item {
@@ -175,7 +203,7 @@
 
 <header>
   <h1>호정<span>'s</span> company</h1>
-  <p>국내 뉴스 브리핑 — 2026.07.20</p>
+  <p>국내 뉴스 브리핑 — 2026.07.21 13:00</p>
   <nav class="cat-nav">
     <a href="#politics">정치</a>
     <a href="#economy">경제</a>
@@ -195,74 +223,26 @@
       <div class="item">
         <span class="num">01</span>
         <div class="body">
-          <h3><a href="https://www.khan.co.kr/article/202607201439001/" target="_blank" rel="noopener">[속보] 국민의힘, '종합특검 연장법' 필리버스터 돌입</a></h3>
-          <p>더불어민주당이 상정한 2차 종합특검 연장법(수사기간 30일 연장, 인력 20명 증원)에 국민의힘이 필리버스터로 맞섰다. 민주당은 24시간 뒤 필리버스터를 강제 종료시키고 법안을 처리할 예정이다.</p>
+          <h3><a href="https://www.khan.co.kr/article/202607210837001" target="_blank" rel="noopener">김병주 "안규백 탈영 의혹 제기, 메신저 공격해 군 개혁 의지 무너뜨리려는 것"</a></h3>
+          <p>더불어민주당 김병주 의원은 사관학교 통합, 방첩사령부 해체 등 군 개혁이 추진되는 상황에서 제기된 탈영 의혹은 메신저를 공격해 개혁 동력을 무너뜨리려는 시도라고 비판했다. 군 개혁을 둘러싼 여야 공방이 이어지고 있다.</p>
         </div>
       </div>
       <div class="item">
         <span class="num">02</span>
         <div class="body">
-          <h3><a href="https://www.khan.co.kr/article/202607201522001/" target="_blank" rel="noopener">'시장직 날아간다'는 민주당 향해 오세훈 측 "기우제식 정치공작 중단하라"</a></h3>
-          <p>오세훈 서울시장 여론조사비 대납 의혹 1심 선고를 이틀 앞두고, 서울시 측이 특검과 민주당 지도부의 유죄 강요 여론전을 "사법부 독립 침해"라며 강하게 반발했다.</p>
+          <h3><a href="https://www.pressian.com/pages/articles/2026072107352713531" target="_blank" rel="noopener">尹정부 '감사원 실세' 유병호, 결국 구속...관저 이전 '봐주기 감사' 혐의</a></h3>
+          <p>윤석열 정부 시절 감사원 사무총장을 지내며 '감사원 실세'로 불린 유병호 감사위원이 대통령 관저 이전 부실감사 의혹으로 21일 구속됐다. 2차 종합특검팀은 무자격업체의 시공 사실을 알고도 허위 보고서 작성을 지시한 혐의(직권남용)로 영장을 청구했고, 법원은 증거인멸 우려를 이유로 이를 발부했다.</p>
         </div>
       </div>
       <div class="item">
         <span class="num">03</span>
         <div class="body">
-          <h3><a href="https://weekly.khan.co.kr/article/202607201624011/" target="_blank" rel="noopener">송영길 "청와대, 정청래 당선되면 상대 안할 것"</a></h3>
-          <p>민주당 전당대회 당대표 경선 후보인 송영길 의원이 정청래 전 대표가 당선되면 당권과 원내대표 중심으로 대응할 것이라 언급하며, 정청래와 이재명 대통령 간 인식 차이를 지적했다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">04</span>
-        <div class="body">
-          <h3><a href="https://www.pressian.com/pages/articles/2026072015422599306" target="_blank" rel="noopener">국민의힘, '2차 종합특검 연장법' 필리버스터 돌입… "공안정국 연장"</a></h3>
-          <p>필리버스터 첫 주자 윤상현 의원은 "지난 1년 대한민국은 민주당만의 나라가 됐다"고 발언했으며, 국민의힘은 법안을 "공안정국 연장"으로 규정했다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">05</span>
-        <div class="body">
-          <h3><a href="https://www.pressian.com/pages/articles/2026072011034375786" target="_blank" rel="noopener">민주당 "李대통령이 당무개입? 국힘이 '尹 출장소' 아니었나"</a></h3>
-          <p>이재명 대통령이 민주당 전당대회 기탁금 인하를 제안한 데 대해 국민의힘이 '당무개입'이라 비판하자, 한병도 직무대행이 윤석열 정부 시절 국민의힘을 겨냥해 반박했다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">06</span>
-        <div class="body">
-          <h3><a href="https://www.pressian.com/pages/articles/2026072010421068180" target="_blank" rel="noopener">정청래도 "전대 기탁금, 작년 수준으로 낮췄으면"</a></h3>
-          <p>정청래 전 민주당 대표는 최고위원 기탁금이 500만원에서 2000만원으로 오른 사실을 몰랐다며, 작년 수준으로 낮추고 당 잔고로 지원하자고 제안했다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">07</span>
-        <div class="body">
-          <h3><a href="https://www.pressian.com/pages/articles/2026072011503592158" target="_blank" rel="noopener">고민정 "靑정무라인 문제 생겼나…李대통령, 말 한마디 파급력 인지해야"</a></h3>
-          <p>당대표 경선에 출마한 고민정 의원은 이재명 대통령의 SNS 발언 파장과 관련해, 권한을 가진 이의 발언이 갖는 파급력을 대통령이 인지해야 한다고 지적했다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">08</span>
-        <div class="body">
-          <h3><a href="https://www.pressian.com/pages/articles/2026072010205836265" target="_blank" rel="noopener">국민의힘, 사관학교 통합 추진에 "정치적 목적…김정은이 좋아할 것"</a></h3>
-          <p>정부의 육·해·공군 사관학교 통합(대전 자운대 4년제 국군사관학교 창설) 방침에 국민의힘 장동혁 대표가 한미동맹 약화를 우려하며 반발했다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">09</span>
-        <div class="body">
-          <h3><a href="https://www.pressian.com/pages/articles/2026072007213938180" target="_blank" rel="noopener">[속보] 유시민 '필연적 실패' 발언 여파?…李대통령·민주 지지율 동반 하락</a></h3>
-          <p>20일 리얼미터 조사에서 이재명 대통령 국정수행 긍정평가가 전주 대비 하락한 48.4%로 나타났다. 금리 인상, 증시 급락, 여권 내 갈등 등이 하락 배경으로 지목됐다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">10</span>
-        <div class="body">
-          <h3><a href="https://www.pressian.com/pages/articles/2026072011324546229" target="_blank" rel="noopener">장동혁 "대통령이 뭐가 급한지도 구분하지 못해…與 전대 기탁금이 급한가"</a></h3>
-          <p>국민의힘 장동혁 대표는 수해·화재·증시 불안 속에 이재명 대통령이 여당 전당대회 기탁금 문제부터 챙긴 것은 부적절하다고 비판했다.</p>
+          <h3><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003252966&amp;PAGE_CD=N0002&amp;CMPT_CD=M0112" target="_blank" rel="noopener">이 대통령 "어떤 개혁도 국민 삶과 동떨어져선 성공 못해"</a></h3>
+          <p>이재명 대통령이 21일 국무회의에서 "어떤 개혁도 국민의 삶과 동떨어져서는 성공할 수 없다"며 민생 중심의 국정운영을 강조했다. 검찰 보완수사권 폐지 등 개혁 입법을 둘러싼 진통이 이어지는 가운데 나온 발언이다.</p>
         </div>
       </div>
     </div>
+    <p style="margin-top:0.8rem; font-size:0.78rem; color:var(--muted);">※ 오늘(7/21) 발행이 확인된 우호 매체 기사만 선별해 3건만 게재합니다. 나머지 이슈(민주당 예비경선, 필리버스터 강제종료 등)는 오늘 오후 결과가 나오는 대로 다음 갱신 때 반영됩니다.</p>
   </section>
 
   <section id="economy">
@@ -270,50 +250,39 @@
       <h2>경제</h2>
       <span class="tag">ECONOMY</span>
     </div>
+
+    <h3 class="sub-head">주식</h3>
     <div class="list">
       <div class="item">
         <span class="num">01</span>
         <div class="body">
-          <h3><a href="https://www.khan.co.kr/en/article/202607201559017/" target="_blank" rel="noopener">코스닥, 4% 급락에 매도 사이드카 발동</a></h3>
-          <p>한국거래소가 20일 오전 10시52분 코스닥시장에 매도 사이드카를 발동했다. 오전 10시57분 기준 코스닥지수는 전 거래일 대비 4.80% 내린 753.87을 기록했으며, 반도체 업종 투자심리 위축이 배경으로 지목됐다.</p>
+          <h3><a href="https://www.ytn.co.kr/_ln/0102_202607211031314282" target="_blank" rel="noopener">[경제]코스피 상승폭 확대해 2% 오름세...코스닥은 하락</a></h3>
+          <p>21일 코스피가 전일 4%대 급락에 따른 반발 매수세와 외국인 순매수에 힘입어 장중 2%대까지 상승폭을 확대했다. 삼성전자·SK하이닉스 등 반도체 대형주가 강세를 주도한 반면 코스닥은 하락세를 보이며 대조를 이뤘다.</p>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:0.6rem; font-size:0.78rem; color:var(--muted);">※ 우호 매체의 오늘자 증시 해설 기사가 아직 확인되지 않아 보조 매체(YTN) 기사 1건만 게재합니다. 장 마감 후 다음 갱신에서 보강 예정입니다.</p>
+
+    <h3 class="sub-head">부동산</h3>
+    <div class="list">
+      <div class="item">
+        <span class="num">01</span>
+        <div class="body">
+          <h3><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003252953&amp;PAGE_CD=N0002&amp;CMPT_CD=M0112" target="_blank" rel="noopener">이 대통령 "국민 눈높이 기초해 공정한 부동산 조세 제도 정비"</a></h3>
+          <p>이재명 대통령이 21일 국무회의에서 부동산 시장 안정이 양극화 완화의 핵심 전제조건이라며 공급 확대와 조세제도 개편을 속도감 있게 추진하겠다고 밝혔다. 오는 23일 열리는 '부동산 국민 대토론회'에서 수렴된 의견을 반영해 실현 가능한 대책을 마련하겠다고 덧붙였다.</p>
         </div>
       </div>
       <div class="item">
         <span class="num">02</span>
         <div class="body">
-          <h3><a href="https://www.khan.co.kr/en/article/202607201310017/" target="_blank" rel="noopener">코스피, 4% 급락에 매도 사이드카 발동…삼성전자·SK하이닉스 4%대 하락</a></h3>
-          <p>한국거래소가 20일 오전 11시21분 유가증권시장에 매도 사이드카를 발동했다. 오전 11시30분 기준 코스피는 전 거래일 대비 4.49% 내린 6514.17이었고, 삼성전자·SK하이닉스 등 반도체 대형주가 동반 약세를 보였다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">03</span>
-        <div class="body">
-          <h3><a href="https://imnews.imbc.com/news/2026/econo/article/6838594_36932.html" target="_blank" rel="noopener">코스피·코스닥 동반 하락에, 양 시장 '매도 사이드카' 발동</a></h3>
-          <p>코스피가 전일 대비 4.46% 내린 6516.27에 마감했다. 중국 AI 스타트업 문샷AI의 신모델 공개에 따른 빅테크 자본지출 지속성 의구심과 미국·이란 충돌에 따른 중동 정세 불안이 급락 배경으로 지목됐다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">04</span>
-        <div class="body">
-          <h3><a href="https://www.pressian.com/pages/articles/2026072016185956762" target="_blank" rel="noopener">[속보] 2000억 마련한 홈플러스, 법원에 즉시항고…회생 폐지 취소 청구</a></h3>
-          <p>홈플러스가 20일 서울회생법원에 회생 폐지 결정에 대한 즉시항고를 제기했다. 메리츠금융그룹이 MBK파트너스·김병주 회장의 연대보증을 조건으로 2000억원 대출을 승인하면서 회생 재시도 길이 열렸다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">05</span>
-        <div class="body">
-          <h3><a href="https://www.khan.co.kr/article/202607201618001" target="_blank" rel="noopener">이 대통령, '초과이윤 사회적 배분' 수석보좌관 회의 사실상 취소</a></h3>
-          <p>청와대가 20일 오후 예정했던 대통령 주재 수석보좌관회의를 순연했다. 반도체 호황에 따른 기업 초과이윤의 사회적 재투자 논의가 아직 여물지 않았다는 판단이 배경으로 꼽힌다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">06</span>
-        <div class="body">
-          <h3><a href="https://www.pressian.com/pages/articles/2026072004165467969" target="_blank" rel="noopener">김용범 "레버리지 ETF 상장폐지는 어렵다…부동산 급등 죄송"</a></h3>
-          <p>김용범 대통령실 정책실장이 단일종목 레버리지 ETF의 상장폐지가 현실적으로 쉽지 않다는 입장과 함께, 최근 부동산 시장 급등에 대해 유감을 표했다.</p>
+          <h3><a href="https://www.pressian.com/pages/articles/2026072109513121350" target="_blank" rel="noopener">국힘, 李대통령 17억 근저당 설정에 "대출규제 우회 꼼수"</a></h3>
+          <p>국민의힘 박정식 원내대표는 이재명 대통령 부부가 성남 분당 아파트를 29억원에 매각하며 매수인에게 17억7000만원 규모의 근저당권을 설정한 것을 대출규제 우회라고 비판했다. 매수인의 잔금 미납 상황에서 채권 확보 차원의 근저당 설정이라는 설명도 함께 나왔다.</p>
         </div>
       </div>
     </div>
+
+    <h3 class="sub-head">전반 경제</h3>
+    <div class="list empty">오늘(7/21) 발행이 확인된 우호 매체의 기업·금융·산업·고용 관련 기사가 아직 확인되지 않아 이번 갱신에는 게재하지 않습니다. 다음 갱신(오후 6시)에서 보강할 예정입니다.</div>
   </section>
 
   <section id="society">
@@ -325,39 +294,26 @@
       <div class="item">
         <span class="num">01</span>
         <div class="body">
-          <h3><a href="https://www.khan.co.kr/article/202607200830001" target="_blank" rel="noopener">인천 쿠팡물류센터 화재 사흘째…붕괴 가능성에 반경 116m '주민 대피령'</a></h3>
-          <p>인천 서구 쿠팡 인천32물류센터 화재가 사흘째 이어지며 건물 붕괴 우려로 인근 반경 116m 주민들에게 대피령이 내려졌다.</p>
+          <h3><a href="https://weekly.khan.co.kr/article/202607210903001/" target="_blank" rel="noopener">61시간 만에 큰 불 잡힌 쿠팡 물류센터…잔불 정리 본격화</a></h3>
+          <p>지난 18일 오전 발생한 인천 쿠팡 인천32물류센터 화재가 61시간 만에 큰 불길이 잡히면서 21일 잔불 정리 작업이 본격화됐다. 소방장비 239대와 인력 845명이 투입됐으며 반경 116m 이내 주민 대피령은 전날 밤 해제됐다.</p>
         </div>
       </div>
       <div class="item">
         <span class="num">02</span>
         <div class="body">
-          <h3><a href="https://www.khan.co.kr/article/202607202114001" target="_blank" rel="noopener">인천 쿠팡 물류센터 화재 61시간 만에 초진···국가소방동원령은 유지</a></h3>
-          <p>7월 18일 새벽 발생한 쿠팡 인천32물류센터 화재가 61시간 만인 20일 오후 8시경 큰불이 잡혔으나, 잔불 정리를 위해 국가소방동원령은 유지됐다.</p>
+          <h3><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003252909&amp;PAGE_CD=N0002&amp;CMPT_CD=M0112" target="_blank" rel="noopener">검경, '장윤기 사건 지휘' 경찰 국가수사본부 동시 압수수색</a></h3>
+          <p>검찰과 경찰이 21일 오전 7시30분쯤 장윤기 사건 수사 지휘 라인에 대한 국가수사본부 압수수색을 동시에 진행했다. 사건 초기 수사 지휘의 적절성을 둘러싼 논란이 확대되는 모습이다.</p>
         </div>
       </div>
       <div class="item">
         <span class="num">03</span>
         <div class="body">
-          <h3><a href="https://www.khan.co.kr/article/202607201002001" target="_blank" rel="noopener">10개 도시의 밤이 하나의 여행이 된다…'대한민국 밤밤 페스타' 개최</a></h3>
-          <p>전국 10개 야간관광 특화도시에서 10월 10일까지 이어지는 '2026 대한민국 밤밤 페스타 시즌2'가 개최된다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">04</span>
-        <div class="body">
-          <h3><a href="https://www.khan.co.kr/article/202607200630001" target="_blank" rel="noopener">월요일 출근길 '물바다' 주의···중부 최대 80㎜ 돌풍·번개 동반한 '기습 폭우'</a></h3>
-          <p>20일 월요일 출근길 중부지방을 중심으로 최대 80mm의 기습 폭우와 돌풍·번개가 예보되어 침수 등 피해 주의보가 내려졌다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">05</span>
-        <div class="body">
-          <h3><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003252701&amp;PAGE_CD=ET001&amp;BLCK_NO=1&amp;CMPT_CD=T0016" target="_blank" rel="noopener">"어르신들은 대피도 못해" 쿠팡 화재 초진 예측 실패, 주민들 우왕좌왕</a></h3>
-          <p>화재 나흘째인 20일, 전날 밤 초진 예측이 빗나가면서 대피 안내가 늦어져 고령 주민 등이 제대로 대피하지 못하는 등 혼란이 있었다는 현장 취재 기사.</p>
+          <h3><a href="https://www.pressian.com/pages/articles/2026072111594812744" target="_blank" rel="noopener">더는 마음이 이상해지지 않는 관객들을 향한 나홍진 감독의 충격효과</a></h3>
+          <p>외계 생명체의 지구 습격을 다룬 나홍진 감독의 신작이 자극에 무뎌진 관객들을 향해 강한 시각적 충격을 안기는 연출 전략을 택했다는 평가를 다룬 리뷰 기사다. 21일 게재됐다.</p>
         </div>
       </div>
     </div>
+    <p style="margin-top:0.8rem; font-size:0.78rem; color:var(--muted);">※ 오늘 발행이 확인된 우호 매체 기사 3건만 게재합니다.</p>
   </section>
 
   <section id="issues">
@@ -369,39 +325,19 @@
       <div class="item">
         <span class="num">01</span>
         <div class="body">
-          <h3><a href="https://www.khan.co.kr/article/202607202048015" target="_blank" rel="noopener">알제리 하늘 '활짝', 아프리카 직항 확대</a></h3>
-          <p>국토교통부가 한-알제리 항공회담에서 직항노선 개설과 주 4회 여객·화물 겸용 운수권 설정에 합의했다고 20일 발표했다. 에티오피아항공 노선에 이어 한국과 아프리카를 잇는 두 번째 직항로가 될 전망이다.</p>
+          <h3><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003252880&amp;PAGE_CD=N0002&amp;CMPT_CD=M0117" target="_blank" rel="noopener">트럼프 "이란, 미군 죽일 때마다 몇 배로 대가 치를 것"</a></h3>
+          <p>트럼프 미국 대통령이 21일 델라웨어주 도버 공군기지에서 열리는 전사자 추모식 참석을 앞두고, 이란이 미군을 살해할 때마다 몇 배로 대가를 치르게 될 것이라고 경고했다. 그는 이 같은 지시를 국방장관과 합참의장 등 전 군 지휘관에게 전달했다고 밝혔다.</p>
         </div>
       </div>
       <div class="item">
         <span class="num">02</span>
         <div class="body">
-          <h3><a href="https://www.pressian.com/pages/articles/2026072018250862106" target="_blank" rel="noopener">미군 사망자 또 나오며 전면전 '일촉즉발'…이스라엘, 美 전쟁으로 끌고 가나</a></h3>
-          <p>이란의 공격으로 미군 사망자가 잇따르며 미국과 이란 간 전면전 가능성이 고조되는 가운데, 이스라엘이 확전 국면을 이용해 미국을 자국의 전쟁으로 끌어들이려 한다는 분석이 나온다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">03</span>
-        <div class="body">
-          <h3><a href="https://imnews.imbc.com/replay/2026/nwtoday/article/6838498_37012.html" target="_blank" rel="noopener">미·이란 충돌 격화‥"전면전 한층 가까워져"</a></h3>
-          <p>휴전이 사실상 붕괴된 가운데 미군의 이란 공습이 9일째 이어지고, 이란의 요르단 아카바 지역 미사일 발사에 이스라엘도 아이언돔을 가동하는 등 중동 정세가 전면전에 한층 가까워지고 있다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">04</span>
-        <div class="body">
-          <h3><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003252635&amp;PAGE_CD=N0002&amp;CMPT_CD=M0117" target="_blank" rel="noopener">이란 전쟁 확대 우려... 미군 추가 사망으로 부담 커진 트럼프</a></h3>
-          <p>이라크 북부에서 이란 공격 드론 잔해 처리 중 미군 1명이 추가로 숨지면서 전쟁 재개 이틀 만에 미군 사망자가 3명으로 늘었다. 미 중부사령부는 이란의 군사력이 약화될 때까지 공습을 지속하겠다고 밝혔다.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="num">05</span>
-        <div class="body">
-          <h3><a href="https://www.ytn.co.kr/_cs/_ln_0104_202607200354295995_005.html" target="_blank" rel="noopener">[국제] 러시아, 최대 규모 탄도미사일 보복...사상자 속출</a></h3>
-          <p>러시아가 우크라이나의 물류창고 드론 공격에 대한 보복으로 키이우 등 주요 도시에 탄도·극초음속 미사일 40여 발을 발사해 민간인 사상자가 속출했다. 우크라이나군은 전쟁 발발 이후 최대 규모 공격이라고 밝혔다.</p>
+          <h3><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003252951&amp;PAGE_CD=N0002&amp;CMPT_CD=M0112" target="_blank" rel="noopener">"매일 눈 뜨면 사형 집행 소식" 이란 1월 시위자 또 처형</a></h3>
+          <p>이란 인권단체가 지난 1월 시위 관련 구금자 2명이 이스파한에서 처형됐다고 확인했다. 처형된 이들은 18세 에르판 에스파하니와 아프가니스탄 국적 23세 모하마드 모하마디로 알려졌다.</p>
         </div>
       </div>
     </div>
+    <p style="margin-top:0.8rem; font-size:0.78rem; color:var(--muted);">※ 오늘 발행이 확인된 우호 매체 기사 2건만 게재합니다.</p>
   </section>
 
   <section id="weather">
@@ -413,22 +349,22 @@
       <div class="item">
         <span class="num city">서울</span>
         <div class="body">
-          <h3><a href="https://www.khan.co.kr/article/202607200630001" target="_blank" rel="noopener">서울, 월요일 출근길 최대 80㎜ 돌풍·번개 동반 '기습 폭우' 주의</a></h3>
-          <p>20일 월요일 서울을 포함한 수도권·중부지방에 돌풍과 천둥·번개를 동반한 최대 80mm의 강한 비가 예보돼 출근길 침수·강풍 주의가 필요하며, 오전 중 시간당 20~30mm의 강한 소나기가 집중될 전망이다. 앞서 이어지던 폭염·열대야는 이날 비로 잠시 꺾이는 양상이다.</p>
+          <h3><a href="https://imnews.imbc.com/replay/2026/nwtoday/article/6838782_37012.html" target="_blank" rel="noopener">수도권 출근길 집중호우‥시간당 최대 50mm</a></h3>
+          <p>21일 수도권에 시간당 30~50mm의 강한 비가 내리고 하루 최대 100mm 이상의 추가 강수가 예상되며, 서울은 아침 24도·낮 28도의 기온을 보일 전망이다. 비가 그친 뒤에는 남부지방을 중심으로 폭염특보가 확대될 것으로 예보됐다.</p>
         </div>
       </div>
       <div class="item">
         <span class="num city">부산</span>
         <div class="body">
-          <h3><a href="https://www.newsis.com/view/NISI20260720_0021370738" target="_blank" rel="noopener">부산, 폭염경보 속 수영만 해무 겹쳐…열대야도 이어져</a></h3>
-          <p>부산은 폭염경보가 발효된 가운데 20일 수영만 해상에 짙은 해무가 동시에 발생하는 이례적 현상이 나타났으며, 낮 최고기온 33도 안팎에 체감온도는 35도까지 오르는 곳도 있다. 열대야주의보도 함께 발효 중이다.</p>
+          <h3><a href="https://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0300&amp;key=20260721.22016005928" target="_blank" rel="noopener">오늘의 날씨 - 2026년 7월 21일 (부산·경남)</a></h3>
+          <p>21일 부산·경남 지역은 폭염특보가 이어지는 가운데 낮 최고기온 31~34도의 무더위와 최저기온 25~26도로 열대야가 계속될 전망이다. 경남 서부내륙은 가끔 소나기가 내릴 수 있어 국지성 강수에 유의해야 한다.</p>
         </div>
       </div>
       <div class="item">
         <span class="num city">남원</span>
         <div class="body">
-          <h3><a href="https://imnews.imbc.com/replay/2026/nwdesk/article/6838368_37004.html" target="_blank" rel="noopener">장마전선 다시 활성화…남원 등 전북, 시간당 30~50㎜ 극한 호우 우려</a></h3>
-          <p>장마전선이 다시 활성화되며 20일 남원을 포함한 전북 지역에 최대 120mm의 많은 비가 예상되고, 시간당 30~50mm의 극한 호우가 쏟아질 수 있어 주의가 필요하다.</p>
+          <h3><a href="https://www.kma.go.kr/jeonju/index.jsp" target="_blank" rel="noopener">전주기상지청 예보 - 전북 남원 날씨</a></h3>
+          <p>기상청 전주기상지청에 따르면 21일 전북 남원은 아침 기온 23~26도, 낮 기온 28~35도까지 오르며 내륙을 중심으로 폭염특보가 이어질 전망이다. 무더위가 계속되는 만큼 온열질환 예방에 유의가 필요하다.</p>
         </div>
       </div>
     </div>
